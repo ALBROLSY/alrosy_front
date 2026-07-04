@@ -1,7 +1,6 @@
 
 import './App.css'
-import './bootstrap-5.3.5-dist/css/bootstrap.css'
-import './bootstrap-5.3.5-dist/js/bootstrap.js'
+
 
 import Nav from './componant/layaut/nav.jsx'
 import Footer from './componant/layaut/footer.jsx'
