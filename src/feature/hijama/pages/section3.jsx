@@ -1,5 +1,9 @@
 import { useEffect,useState } from "react"
 import axios from "axios"
+import hejama from '@/assets/image/images.jpeg';
+import china from '@/assets/image/ابر.PNG';
+import massage from '@/assets/image/تدليك.PNG';
+import cero from '@/assets/image/كيرو.PNG';
 export default function Section3() {
 //  const[massage ,setmassage]=useState; 
   
@@ -20,7 +24,7 @@ export default function Section3() {
                 <div className="w-100 h-75 bg-1nfo d-flex justify-content-center flex-wrap gap-3 pt-3 ">
                     <h1 className="w-100 text-white mt-5 fw-bolder text-center pt-2">قسم الطب التكميلى </h1>
                     <div className="  rounded-4  mt-3 card1 p-2 " >
-                        <img src="src/assets/image/images.jpeg" alt="" className="w-100 h-50 rounded-4" />
+                        <img src={hejama} alt="" className="w-100 h-50 rounded-4" />
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center w-100 ">الحجامه </h1>
                                         <p className=" text-center w-100 h-75 "> تقنية علاجية تقليدية تعتمد على استخدام كؤوس لشفط الجلد وتنشيط الدورة الدموية.
@@ -29,7 +33,7 @@ export default function Section3() {
                                     </div>
                     </div>
                     <div className="  rounded-4 mt-3  card1 p-2  " >
-                        <img src="src/assets/image/Capture2.PNG" alt="" className="w-100 h-50 rounded-4" />
+                        <img src={china} alt="" className="w-100 h-50 rounded-4" />
 
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center  w-100 ">الابر الصينيه</h1>
@@ -39,7 +43,7 @@ export default function Section3() {
                         </div>
                     </div>
                     <div className="   rounded-4  mt-3 card1 p-2  " >
-                        <img src="src/assets/image/Capture.PNG" alt="" className="w-100 h-50 rounded-4" />
+                        <img src={massage} alt="" className="w-100 h-50 rounded-4" />
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center  w-100 ">المساج</h1>
                         <p className=" text-center  w-100 h-75 "> أسلوب علاجي يعتمد على تدليك العضلات والأنسجة لتحسين الدورة الدموية.
@@ -48,7 +52,7 @@ export default function Section3() {
                         </div>
                     </div>
                      <div className="   rounded-4  mt-3 card1 p-2  " >
-                        <img src="src/assets/image/Capture3.PNG" alt="" className="w-100 h-50 rounded-4" />
+                        <img src={cero} alt="" className="w-100 h-50 rounded-4" />
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center  w-100 ">كيرو براكتيك(طرقعه)</h1>
                         <p className=" text-center  w-100 h-75 "> علاج يركز على تعديل وضع الفقرات والمفاصل خاصة العمود الفقري.

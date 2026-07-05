@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import homeimage from '@/assets/image/IMG-20260224-WA0007.jpg';
  export default function One(){
       
     return(
@@ -8,7 +8,7 @@ import React from "react";
           <section  className="  pt-5 bg-black">
                 <div className="w-100 h-100 pb-3  align-items-center ">
                   <div className="w-100 h-25  d-flex justify-content-center align-items-center img1 pt-5">
-                    <img src="src/assets/image/IMG-20260224-WA0007.jpg" loading="lazy" alt="" className="h-50 w-25  rounded-circle" />
+                    <img src={homeimage} loading="lazy" alt="" className="h-50 w-25  rounded-circle" />
                   </div>
                  <div className="text w-100 h-75  py-3 text-center ">
                         <div className="w-100 h-50">

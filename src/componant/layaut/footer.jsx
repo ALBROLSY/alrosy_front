@@ -1,17 +1,23 @@
- import { Link } from "react-router-dom"
- 
+ import { Link } from "react-router-dom";
+ import logo from "@/assets/image/IMG-20260120-WA0006.jpg";
+ import locationimage from '@/assets/icone/location-dot-solid-full.svg';
+ import iconephone from '@/assets/icone/phone-solid-full.svg';
+ import facebook from '@/assets/icone/facebook-brands-solid-full.svg';
+ import whatsapp from '@/assets/icone/square-whatsapp-brands-solid-full.svg';
+ import instagram from  '@/assets/icone/square-instagram-brands-solid-full.svg';
+ import tiktok from '@/assets/icone/tiktok-brands-solid-full.svg';
  export default function Footer(){
     return(
         <>
             <footer >
                 <div className="  w-100 h-75 d-flex flex-wrap justify-content-center   ">
-                  <div className="w-50 h-25   d-flex justify-content-center"><img src="src/assets/image/IMG-20260120-WA0006.jpg" alt="" className="h-100 w-25 rounded-circle" /></div>
+                  <div className="w-50 h-25   d-flex justify-content-center"><img src={logo} alt="" className="h-100 w-25 rounded-circle" /></div>
                   <div className="w-100 h-75 d-flex  gap-3 justify-content-center align-items-center"> 
                    <div className="w-25 h-100 d-flex flex-wrap justify-content-center ">
                     <h4 className="w-75">cap/omar alrosy</h4>
                     <h6 className="w-75">omerAlrosy@gmail.com</h6>
-                    <span className="w-75"> <img src="src/assets/icone/location-dot-solid-full.svg" alt=""  className="img1 me-2" /><Link to='/location' className="text-decoration-none text-black fw-bolder ">location</Link></span>
-                    <span className="w-75" > <img src="src/assets/icone/phone-solid-full.svg" alt=""  className="img1 me-2" />01090540191</span> 
+                    <span className="w-75"> <img src={locationimage} alt=""  className="img1 me-2" /><Link to='/location' className="text-decoration-none text-black fw-bolder ">location</Link></span>
+                    <span className="w-75" > <img src={iconephone} alt=""  className="img1 me-2" />01090540191</span> 
                    </div>
                     
                     <div className="w-75 h-100  d-flex justify-content-evenly align-items-center">
@@ -36,10 +42,10 @@
                 <div className="    w-100 h-25 border-top border-black d-flex justify-content-center ">
                     
                     <div className="   w-50 h-100 icon d-flex align-items-center justify-content-evenly ">
-                        <a href="https://www.facebook.com/share/1C3u9c55yM/"><img src="src/assets/icone/facebook-brands-solid-full.svg" alt="" className="img1" /></a>
-                        <a href=" https://wa.me/qr/D6CAN2ITDQA5K1"><img src="src/assets/icone/square-whatsapp-brands-solid-full.svg" alt="" className="img1" /></a>
-                        <a href=""><img src="src/assets/icone/square-instagram-brands-solid-full.svg" alt="" className="img1" /></a>
-                        <a href="https://www.tiktok.com/@al.rosy1?_r=1&_t=ZS-93EbVKVECdo"><img src="src/assets/icone/tiktok-brands-solid-full.svg" alt="" className="img1" /></a>
+                        <a href="https://www.facebook.com/share/1C3u9c55yM/"><img src={facebook} alt="" className="img1" /></a>
+                        <a href=" https://wa.me/qr/D6CAN2ITDQA5K1"><img src={whatsapp} alt="" className="img1" /></a>
+                        <a href=""><img src={instagram} alt="" className="img1" /></a>
+                        <a href="https://www.tiktok.com/@al.rosy1?_r=1&_t=ZS-93EbVKVECdo"><img src={tiktok} alt="" className="img1" /></a>
                     </div>
                     
                     
