@@ -1,12 +1,12 @@
 import api from "../api/api";
 
 
- export const prsonaldata={
+ export const personaldata={
 
-getUser:async()=>{
-    const res = await api.get('/getUser');
-   return res.data;
-},
+            getUser:async()=>{
+                const res = await api.get('/getUser');
+            return res.data;
+            },
 
 }
 

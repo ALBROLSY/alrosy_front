@@ -13,14 +13,14 @@
                 <div className="  w-100 h-75 d-flex flex-wrap justify-content-center   ">
                   <div className="w-50 h-25   d-flex justify-content-center"><img src={logo} alt="" className="h-100 w-25 rounded-circle" /></div>
                   <div className="w-100 h-75 d-flex  gap-3 justify-content-center align-items-center"> 
-                   <div className="w-25 h-100 d-flex flex-wrap justify-content-center ">
-                    <h4 className="w-75">cap/omar alrosy</h4>
-                    <h6 className="w-75">omerAlrosy@gmail.com</h6>
-                    <span className="w-75"> <img src={locationimage} alt=""  className="img1 me-2" /><Link to='/location' className="text-decoration-none text-black fw-bolder ">location</Link></span>
-                    <span className="w-75" > <img src={iconephone} alt=""  className="img1 me-2" />01090540191</span> 
+                   <div className="w-100 h-100 d-flex flex-wrap justify-content-center continerText  borter-bottom-2">
+                    <h4 className="w-75 fw-bolder text-black">cap/omar alrosy</h4>
+                    <a href=""className="w-75 dicoration-none"> omerAlrosy@gmail.com</a>
+                    <span className="w-75 d-flex flex-nowrap"> <img src={locationimage} alt=""  className="img1 me-2" /><Link to='/location' className="text-decoration-none text-black fw-bolder ">location</Link></span>
+                    <span className="w-75 d-flex flex-nowrap text-black " > <img src={iconephone} alt=""  className="img1 me-2" />01090540191</span> 
                    </div>
                     
-                    <div className="w-75 h-100  d-flex justify-content-evenly align-items-center">
+                    <div className="w-100   d-flex justify-content-evenly align-items-center flex-wrap continerLinks">
                     <Link to={'five/login'} className="text-decoration-none text-black fw-bolder" >تسجيل دخول</Link>
                     <Link to={'Userform'} className="text-decoration-none text-black fw-bolder">تسجيل بيانات</Link>
                     <Link to={'Personaldata'} className="text-decoration-none text-black fw-bolder">الملف الشخصى </Link>

@@ -63,6 +63,7 @@ const logout = async()=>{
     localStorage.removeItem('user');
   }
 };
+
 return(
     <Authcontext.Provider value={{user ,login ,loading,logout,register,token,isAuthenticated:!!token}}>
         {children}

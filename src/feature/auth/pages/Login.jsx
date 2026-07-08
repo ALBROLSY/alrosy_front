@@ -24,7 +24,7 @@ import { Link ,useNavigate} from "react-router-dom"
            
     return(
     <section  className="d-flex bg-dark justify-content-center align-items-center flex-wrap ">
-        <form  onSubmit={handelsubmit}  className="h-110 w-50 card1 rounded-5 p-2 bg-black ">
+        <form  onSubmit={handelsubmit}  className="h-110 w-45 card1 rounded-5 p-2 bg-black ">
             <h1 className="text-center text-white fw-bold mx-5 py-2 border-bottom">تسجيل الدخول</h1>
             <label htmlFor="email"  className="w-100 py-1 text-capitalize mt-4 text-white">email</label>
             <input type="email" name="email" value={email} onChange={(e)=>setemail(e.target.value)} id="email"  className= "input-100 mb-1 text-dark"/>

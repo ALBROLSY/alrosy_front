@@ -23,7 +23,7 @@ export default function Section3() {
            <div className="w-100 h-100  ">
                 <div className="w-100 h-75 bg-1nfo d-flex justify-content-center flex-wrap gap-3 pt-3 ">
                     <h1 className="w-100 text-white mt-5 fw-bolder text-center pt-2">قسم الطب التكميلى </h1>
-                    <div className="  rounded-4  mt-3 card1 p-2 " >
+                    <div className=" w-45 rounded-4  mt-3 card1 p-2 " >
                         <img src={hejama} alt="" className="w-100 h-50 rounded-4" />
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center w-100 ">الحجامه </h1>
@@ -32,7 +32,7 @@ export default function Section3() {
                 تساعد في تخفيف الألم وتحسين الصحة العامة والاسترخاء.</p>
                                     </div>
                     </div>
-                    <div className="  rounded-4 mt-3  card1 p-2  " >
+                    <div className=" w-45 rounded-4 mt-3  card1 p-2  " >
                         <img src={china} alt="" className="w-100 h-50 rounded-4" />
 
                         <div className="w-100 h-50">
@@ -42,7 +42,7 @@ export default function Section3() {
 يُستخدم لتخفيف الألم وعلاج التوتر والعديد من الحالات الصحية.</p>
                         </div>
                     </div>
-                    <div className="   rounded-4  mt-3 card1 p-2  " >
+                    <div className=" w-45  rounded-4  mt-3 card1 p-2  " >
                         <img src={massage} alt="" className="w-100 h-50 rounded-4" />
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center  w-100 ">المساج</h1>
@@ -51,7 +51,7 @@ export default function Section3() {
 يمنح شعورًا بالاسترخاء ويخفف من آلام العضلات. </p>
                         </div>
                     </div>
-                     <div className="   rounded-4  mt-3 card1 p-2  " >
+                     <div className=" w-45  rounded-4  mt-3 card1 p-2  " >
                         <img src={cero} alt="" className="w-100 h-50 rounded-4" />
                         <div className="w-100 h-50">
                         <h1 className="fw-bold  fs-3 text-center  w-100 ">كيرو براكتيك(طرقعه)</h1>
@@ -63,7 +63,7 @@ export default function Section3() {
                 </div>
                 <div className=" w-100 h-100  card2 d-flex justify-content-center p-1 flex-wrap  ">
                     <h1 className="w-100 text-white mt-5 fw-bolder text-center pt-2">نموذج الحجز </h1>
-                    <form action="http://127.0.0.1:8000/api/hejama" method="post" encType="application" className="w-50 h-75 form1  px-2 rounded-4 mb-4 bg-form " > 
+                    <form action="http://127.0.0.1:8000/api/hejama" method="post" encType="application" className="w-45  h-75 form1  px-2 rounded-4 mb-4 bg-form  userform" > 
                             <label htmlFor="الاسم" className="text-white mb-3 mt-3" >الاسم</label>
                             <input type="text" name="name" id="الاسم" className="w-100  py-2 bg-inp " />
                             <label htmlFor="الطول" className="text-white mb-3 mt-3">الطول</label>
