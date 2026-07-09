@@ -9,9 +9,9 @@ export default defineConfig({
    define:{
       global:'globalHtis',
    },
-    build:{
+   build:{
       commonjsOptions:{
-        transformMixedEsModules:true,
+       transformMixedEsModules:true,
     }
     },
     optimizeDeps:{
@@ -21,5 +21,14 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
+    },
+    server:{
+      host:true,
+      port:5173
+    },
+    preview:{
+      host:true,
+      port:4173
+    }
+
 })

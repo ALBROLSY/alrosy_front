@@ -36,7 +36,7 @@ export default function Personldata(){
                      setloading(false);
                 }
         fatchUserData();  }
-       },[navigate])
+       },[])
       //  useEffect(()=>{
       //        const data =  api.get('/getUser');
       //       localStorage.setItem('profile',data.User.profile) ;
