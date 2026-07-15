@@ -18,9 +18,9 @@ header {
 
 nav {
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: absolute;
-  background: silver;
+  background: rgb(238, 11, 11);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -50,6 +50,7 @@ li {
 section {
   width: 100%;
   min-height: 100vh;
+  background-color: #000;
 }
 
 .img1:hover {
@@ -58,7 +59,7 @@ section {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: 5s linear step-end;
   cursor: pointer;
   box-shadow: 30px rgb(35, 34, 34);
@@ -71,7 +72,7 @@ footer {
 }
 
 .bg-silver {
-  background-color: rgb(115.5, 115.5, 115.5);
+  background-color: black;
 }
 
 li > Link:hover {
@@ -89,7 +90,7 @@ li > Link:hover {
 }
 
 .card1 {
-  background-color: rgb(230.25, 230.25, 230.25);
+  background-color: rgb(93.6009174312, 91.8990825688, 91.8990825688);
   border: #000000 double 3px;
   box-sizing: content-box;
   outline: none;
@@ -126,12 +127,18 @@ li > Link:hover {
 }
 
 .bg-inp {
-  background: none;
+  background: white;
+  border-radius: 17px;
+  height: 50px;
   border-bottom: #000;
 }
 
 .bg-form {
-  background: rgba(45, 77, 107, 0.9607843137);
+  background: #373636;
+}
+
+.bg-dange {
+  background: linear-gradient(60deg, #000, #f30808);
 }
 
 .w-45 {
@@ -173,7 +180,7 @@ li > Link:hover {
     align-self: end;
     width: 100%;
     height: 300px;
-    background-color: silver;
+    background-color: rgb(238, 11, 11);
     display: flex;
     padding: 0 20px 0 20px;
     padding: 30px;

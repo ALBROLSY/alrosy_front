@@ -20,12 +20,12 @@ export default function Nav(){
                         <div className=' w-50 h-100  d-flex  justify-content-center align-items-center  '  >
                            
                                 <ul className=' w-50 h-100  d-flex  justify-content-evenly    align-items-center navlink '   >
-                                      <li  ><Link to={'/'} className='text-decoration-none text-black fw-bolder navlink'>رئيسيه</Link>  </li>
-                                      <li > <Link to={'two'}className='text-decoration-none text-black fw-bolder navlink' >تدريب </Link> </li>
-                                      <li > <Link to={'three'}className='text-decoration-none text-black fw-bolder navlink' > حجامه</Link> </li>
+                                      <li  ><Link to={'/'} className='text-decoration-none text-black fw-bolder fs-5  navlink'>رئيسيه</Link>  </li>
+                                      <li > <Link to={'two'}className='text-decoration-none text-black fw-bolder  fs-5 navlink' >تدريب </Link> </li>
+                                      <li > <Link to={'three'}className='text-decoration-none text-black fw-bolder fs-5  navlink' > حجامه</Link> </li>
                                      {/* <li > <Link to={'four'}className='text-decoration-none text-black fw-bolder navlink '>استوديو</Link> </li> */}
-                                      <li > <Link to={'five'}className='text-decoration-none text-black fw-bolder  navlink'> انشاء حساب</Link> </li>
-                                      <li > <Link to={'personaldata'} className='text-decoration-none text-black fw-bolder navlink ' >شخصى</Link></li>
+                                      <li > <Link to={'five'}className='text-decoration-none text-black fw-bolder fs-5 navlink'> انشاء حساب</Link> </li>
+                                      <li > <Link to={'personaldata'} className='text-decoration-none text-black fw-bolder fs-5  navlink ' >شخصى</Link></li>
 
                                 </ul>
                               <select name="" className='  rounded-3 bg-prmium fw-bolder h-75 text-center' id="minu" onChange={handelchange}>

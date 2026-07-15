@@ -21,11 +21,11 @@
                    </div>
                     
                     <div className="w-100   d-flex justify-content-evenly align-items-center flex-wrap continerLinks">
-                    <Link to={'five/login'} className="text-decoration-none text-black fw-bolder" >تسجيل دخول</Link>
-                    <Link to={'Userform'} className="text-decoration-none text-black fw-bolder">تسجيل بيانات</Link>
-                    <Link to={'Personaldata'} className="text-decoration-none text-black fw-bolder">الملف الشخصى </Link>
-                    <Link className="text-decoration-none text-black fw-bolder">الاستفسارات </Link>
-                    <Link className="text-decoration-none text-black fw-bolder">العروض والتخفيضات </Link>
+                    <Link to={'five/login'} className="text-decoration-none text-black fw-bolder fs-5" >تسجيل دخول</Link>
+                    <Link to={'Userform'} className="text-decoration-none text-black fw-bolder  fs-5">تسجيل بيانات</Link>
+                    <Link to={'Personaldata'} className="text-decoration-none text-black fw-bolder fs-5">الملف الشخصى </Link>
+                    <Link className="text-decoration-none text-black fw-bolder fs-5">الاستفسارات </Link>
+                    <Link className="text-decoration-none text-black fw-bolder fs-5">العروض والتخفيضات </Link>
                   </div></div>
                  
                 

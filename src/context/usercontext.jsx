@@ -5,30 +5,16 @@ export const Authprovider = ({children})=>{
     const [user,setuser]=useState(null);
     const [token,settoken]=useState(localStorage.getItem('token'));
     const [loading,setloading]=useState(true);
-     
- 
-
-const login = async(loginData)=>{
-    try{
-        const data = await authservices.login(loginData);
-        setuser(data.User.user_name);
-
-        localStorage.setItem('token',data.token);
-        //   const userData= await authservices.getUser();
-        //   localStorage.setItem('data',userData.User);
-        //   console.log('data',userData)
-        return{ success: true , data:data};
-        console.log(data.token);
-        alert('welcome back'+{user});
-    }catch(error){
-        alert('الرجاء التاكد من الايميل او الباسورد');
-    }
- useEffect(()=>{
+    useEffect(()=>{
         const initAuth =async()=>{
            if(token){
                      try{
-                         const userData= await authservices.getUser();
-                          setuser(userData);
+                         const res = await authservices.getUser();
+                       
+                            
+                            setuser(res.data);
+                            console.log(res.data);
+                            localStorage.setItem('user',JSON.stringify(res.data));
                      }catch(error){
                              localStorage.removeItem('token');
                              settoken(null);
@@ -39,6 +25,26 @@ const login = async(loginData)=>{
        initAuth();
     
          },[token]);
+ 
+
+const login = async(loginData)=>{
+    try{
+        const data = await authservices.login(loginData);
+        
+       
+        localStorage.setItem('token',data.token);
+           const userData= await authservices.getUser();
+           setuser(userData);
+          localStorage.setItem('user',JSON.stringify(userData.data));
+        //   localStorage.setItem('data',userData.User);
+        //   console.log('data',userData)
+        return{ success: true , data:userdata.data};
+        console.log(data.token);
+       
+    }catch(error){
+        alert('الرجاء التاكد من الايميل او الباسورد');
+    }
+
 };
 const register = async (userData)=>{
    try{
@@ -65,7 +71,7 @@ const logout = async()=>{
 };
 
 return(
-    <Authcontext.Provider value={{user ,login ,loading,logout,register,token,isAuthenticated:!!token}}>
+    <Authcontext.Provider value={{ user ,login ,loading,logout,register,token,isAuthenticated:!!token}}>
         {children}
     </Authcontext.Provider>
 );

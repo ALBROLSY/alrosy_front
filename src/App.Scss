@@ -1,18 +1,21 @@
-$back-normal:silver;
-
+$back-normal:rgb(238, 11, 11);
+$card-color:#373636;
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
   }
   body{
+   
     position: relative;
     overflow-x:hidden;
     width: 100%;
     background-size: 100% 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
   }
   header{
     width: 100%;
@@ -20,7 +23,7 @@ $back-normal:silver;
   }
    nav{
     width: 100%;
-   height: 50px;
+   height: 70px;
     position:absolute;
     background:$back-normal;
     display: flex;
@@ -49,7 +52,7 @@ $back-normal:silver;
   section{
     width: 100%;
    min-height: 100vh;
-    
+   background-color: #000;
   }
   
   .img1:hover{
@@ -65,7 +68,7 @@ $back-normal:silver;
     
   //  } */
   .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
     transition: 5s linear step-end;
     cursor: pointer;
     box-shadow: 30px rgb(35, 34, 34);
@@ -77,7 +80,7 @@ $back-normal:silver;
    display: block;
   }
   .bg-silver{
-    background-color:darken($color: $back-normal, $amount: 30%);
+    background-color:darken($color: $card-color, $amount: 30%);
   }
   li>Link:hover{
     color: gold
@@ -94,7 +97,7 @@ $back-normal:silver;
   //   display: none;
   // }
   .card1{
-    background-color: lighten($color: $back-normal, $amount: 15%);
+    background-color: lighten($color: $card-color, $amount: 15%);
     border: #000000 double 3px;
     box-sizing: content-box;
     outline: none;
@@ -129,12 +132,16 @@ background: #000;
 
 }
 .bg-inp{
-  background: none;
-  
+  background: white;
+  border-radius: 17px;
+  height: 50px;
   border-bottom: #000;
 }
 .bg-form{
-  background: #2d4d6bf5;
+  background:$card-color;
+}
+.bg-dange{
+  background:linear-gradient(60deg,#000,#f30808);
 }
 
 //   .gallery {

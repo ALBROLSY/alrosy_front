@@ -6,17 +6,17 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   base: './',
-    define:{
-       global:'globalHtis',
+     define:{
+        global:'globalHtis',
     },
-    build:{
-       commonjsOptions:{
-        transformMixedEsModules:true,
-     }
-     },
-     optimizeDeps:{
-       include:['bootstrap']
-     },
+     build:{
+        commonjsOptions:{
+         transformMixedEsModules:true,
+      }
+      },
+      optimizeDeps:{
+        include:['bootstrap']
+      },
    resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

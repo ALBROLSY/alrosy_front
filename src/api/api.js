@@ -1,10 +1,10 @@
 import axios from "axios";
 const api= axios.create({
-    // baseURL:'http://127.0.0.1:8000/api',
-    baseURL:'https://alrosybackend-production.up.railway.app/api',
+     baseURL:'http://127.0.0.1:8000/api',
+   // baseURL:'https://alrosybackend-production.up.railway.app/api',
     
 });
-console.log(import.meta.env.VITE_API_URL);
+
 api.interceptors.request.use(
     (config) =>{
     const token = localStorage.getItem('token');

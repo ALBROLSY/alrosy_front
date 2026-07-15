@@ -45,7 +45,7 @@ const[form,setform] = useState({
     return(
         <section className="d-flex bg-black justify-content-center align-items-center pt-3  ">
             <div className="w-100 h-100 d-flex justify-content-center pt-5 flex-wrap ">
-                <form onSubmit={handelsubmit}  className="w-75 h-100 card1 px-4   bg-form rounded-5  ">
+                <form onSubmit={handelsubmit}  className="userform h-100 card1 px-4  mt-5 bg-form rounded-5  ">
                     <h1 className="text-center text-white fw-bold mx-5 py-1 border-bottom ">انشاء حساب</h1>
                         <label htmlFor="name" className="w-100 py-1 text-capitalize text-white my-2" >user name</label>
                         <input type="text" name="user_name" value={form.user_name} onChange={handleChange} required id="name" className="input-100" />
