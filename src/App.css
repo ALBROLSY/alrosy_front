@@ -69,6 +69,7 @@ section {
 footer {
   flex-wrap: nowrap;
   display: block;
+  background: rgb(238, 11, 11);
 }
 
 .bg-silver {

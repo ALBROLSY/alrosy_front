@@ -78,6 +78,7 @@ $card-color:#373636;
    
    flex-wrap: nowrap;
    display: block;
+   background: $back-normal;
   }
   .bg-silver{
     background-color:darken($color: $card-color, $amount: 30%);
